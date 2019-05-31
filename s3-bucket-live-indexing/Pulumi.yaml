@@ -1,0 +1,15 @@
+name: chaossearch-s3-bucket-live-indexing
+runtime: python
+description: A Python Pulumi program for CHAOSSEARCH
+template:
+  config:
+    aws:region:
+      description: Default AWS region
+      default: us-east-1
+    cs_external_id:
+      description: 'chaossearch.io - String: External id (customer id) for bucket creations and assume role'
+    cs_data_bucket:
+      description: 'chaossearch.io - String: Bucket name to be created to index data out of'
+    sqs_queue:
+      description: 'chaossearch.io - Boolean: Should there be an sqs queue configured for live update'
+      default: false

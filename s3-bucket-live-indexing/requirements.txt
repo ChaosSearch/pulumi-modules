@@ -1,2 +1,3 @@
 pulumi>=0.16.4
 pulumi_aws>=0.16.2
+pulumi_openstack>=0.16.2
